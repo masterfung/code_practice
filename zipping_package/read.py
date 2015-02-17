@@ -9,7 +9,7 @@ extension_mapping = {
 
 class Read:
 	def __init__(self, filename):
-		extension = os.path.sqlitext(filename)[1]
+		extension = os.path.splitext(filename)[1]
 		opener = extension_mapping.get(extension, open)
 		self.f = opener(filename, 'rt')
 

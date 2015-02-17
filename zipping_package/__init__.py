@@ -1,1 +1,1 @@
-from zipping_package.read import Read 
+from .read import Read 
